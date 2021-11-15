@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+       const person ={
+           name:'bby',
+           age: 200,
+           city:'cq',
+           title:['student',{month:11,title:'cystudent'}]
+       }
+       const{name}=person;
+       console.log(name);//bby
+       const{age}=person;
+       console.log(age);//200
+       const{city}=person;
+       console.log(city);//cq
+       const{title:[stu,arr]}=person
+       console.log(stu)
+       const{month,title}=arr
+       console.log(month)//11
+       console.log(title)//cystudent    
+
+    </script>
+</body>
+</html>
