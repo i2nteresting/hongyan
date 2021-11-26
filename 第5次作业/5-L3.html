@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text {
+        height: 100px;
+        width: 200px;
+        align-self: center;
+        }
+        
+       
+        ul{
+            height: 300px;
+            width: 600px; 
+            border:1px  solid black;
+ 
+        }
+
+    </style>
+</head>
+<body>
+        
+        <p>请发言:</p>
+        <textarea  id="text"  rows="10" cols="50" ></textarea>
+        <button id="button"  >发送</button>
+        <p>留言板</p>
+        <ul >   </ul>
+        
+    
+
+</body>
+<script>
+ var Textu = document.querySelector("text");
+ var Button = document.querySelector('button');
+ var  ul= document.querySelector('ul');
+
+
+Button.onclick = function (){
+    var con = document.createElement('con');
+    const Vaule ={};
+    con.innerHTML = document.getElementById("text").value;
+    ul.insertBefore(con,ul.children[0]);
+    //ul要保持一致//
+
+}
+
+
+
+</script>
+
+</html>

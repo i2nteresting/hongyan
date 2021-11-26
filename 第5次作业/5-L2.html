@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lv2</title>
+</head>
+
+<body>
+
+    <div align="center">
+        <b>请选择您的爱好</b>
+        <br />
+    </div>
+
+    <div id="divlist" align="center">
+        <input type="checkbox" name="contest" value="内卷">内卷
+        <input type="checkbox" name="contest" value="疯狂内卷">疯狂内卷
+        <input type="checkbox" name="contest" value="拼命内卷">拼命内卷
+        <input type="checkbox" name="contest" value="使劲内卷">使劲内卷
+        <br />
+        <input type="button" onclick="all()" value="全选">
+        <input type="button" onclick="none()" value="全不选">
+        <input type="button" onclick="instead()" value="反选">
+    </div>
+    <script>
+        let Contest=document.getElementsByName("contest");
+        for(let i=0;i<Contest.length;i++)
+        Contest[i].checked=true
+        //先遍历选项//
+        function all(){
+            const All=document.getElementsByName("contest"); 
+            for(let i=0;i<Contest.length;i++){
+                Contest[i].checked=true;
+                
+            }
+            All.checked=true;
+        }
+        function none(){
+            const None=document.getElementsByName('contest'); 
+            for(let i=0;i<Contest.length;i++){
+                Contest[i].checked=false;
+        }
+        None.checked=false;
+    }
+        function instead(){
+            const Instead=document.getElementsByName("contest"); 
+            for(let i=0;i<Contest.length;i++){
+                if(Contest[i].checked==false)
+                Contest[i].checked=true;
+                else
+                Contest[i].checked=false;
+        }
+        }
+    </script>
+
+</body>
+
+</html>
