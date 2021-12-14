@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div1{
+        height: 100px;
+        width: 100px;
+        background-color: yellowgreen;
+        border-radius: 50%;
+        position: relative;
+       
+    }
+    .div2{
+        height: 100px;
+        width: 100px;
+        background-color:pink;
+        border-radius: 50%;
+        position: relative;
+    }
+    .div3{
+        height: 100px;
+        width: 100px;
+        background-color:rgb(192, 248, 255);
+        border-radius: 50%;
+        position: relative;
+    }
+</style>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <script>
+        setTimeout(function(){
+        var Div1 = document.querySelector(".div1");
+        var long1=200; 
+        Div1.style.left=long1 +"px";},2000)
+       
+     setTimeout(function(){
+        var Div2 = document.querySelector(".div2");
+        var long1=200; 
+        Div2.style.left=long1 +"px";
+       
+     },4000)
+     setTimeout(function(){
+        var Div3 = document.querySelector(".div3");
+        var long1=200; 
+        Div3.style.left=long1 +"px";
+       
+     },6000)
+  
+</script>
+
+</body>
+</html>
